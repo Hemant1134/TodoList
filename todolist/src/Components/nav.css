@@ -1,0 +1,95 @@
+#sidebar-wrapper{
+    z-index:1;
+    position: absolute;
+    width:0;
+    height:100%;
+    overflow-y:hidden;
+    background: #5b4282;
+    opacity:0.9;
+      transition:all .5s;
+      display:flex;
+      align-items:center;
+  }
+  
+  #page-content-wrapper{
+    width: 100%;	
+    position: absolute;
+    padding:15px;
+      transition:all .5s;
+  }
+  
+  #menu-toggle{
+      transition:all .3s;
+      font-size:2em;
+    margin-left: -1em;
+  }
+  
+  #wrapper.menuDisplayed #sidebar-wrapper{
+    width:250px;
+  }
+  
+  #wrapper.menuDisplayed #page-content-wrapper{
+    padding-left:250px;
+  }
+  
+  .sidebar-nav{
+    padding:0;
+    list-style:none; 
+      transition:all .5s;
+      width:100%;
+      text-align:center;
+  }
+  
+  .sidebar-nav li{
+    line-height:40px;  
+      width:100%;
+      transition:all .3s;
+      padding:10px;
+  }
+  
+  .sidebar-nav li a {
+    display:block;
+    text-decoration:none;
+    color:#ddd;
+  }
+  
+  .sidebar-nav li:hover{
+    background:#846bab;
+  }
+  #mission1,#landing1,#ship1,#Drag1{    
+      position: relative;
+      left: 6em;
+      top: -4em;
+  }
+      #mission,#landing{
+        height: 28vh;
+        margin: 1em;
+      }
+      #mission:hover{
+          transform: scale(1.2);
+          background-color:#846bab;
+      }
+      #landing:hover{
+        transform: scale(1.2);
+        background-color:#846bab;
+      }
+      button{
+        border: none;
+        outline: none;
+        background-color: azure;
+        padding: 4px;
+        width: 6em;
+        border-radius: 2em;
+      }
+      .menu{display: none;background-color: rgba(255,255,255,0.5);}
+      .menu > a{color: black !important;}
+
+
+.img{
+  background-image: url(/public/images/img.jpg);
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 91vh;
+  margin-top: -2em;
+}      
