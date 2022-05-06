@@ -1,0 +1,10 @@
+.todo{
+ float: right;
+}
+.todo:hover{
+  background-color: aliceblue;
+  color: black;
+}
+.list:hover{
+ background-color: slateblue;
+}
